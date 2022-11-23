@@ -27,6 +27,7 @@ class User:
     def user_name(self):
         return self._name + " " + self._last_name
 
+    # Setter can only take one value, so full_name is a tuple that contains name and last_name
     @user_name.setter
     def set_user_name(self,full_name):
         self._name = full_name[0]
